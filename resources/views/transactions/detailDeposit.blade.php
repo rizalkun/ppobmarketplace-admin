@@ -12,7 +12,7 @@
                                 <nav>
                                     <ul class="breadcrumb">
                                         <li class="breadcrumb-item">Home</li>
-                                        <li class="breadcrumb-item">Transaction</li>
+                                        <li class="breadcrumb-item">Transaksi</li>
                                         <li class="breadcrumb-item">Deposit</li>
                                         <li class="breadcrumb-item active"><a href="#">Detail</a></li>
                                     </ul>
@@ -33,44 +33,20 @@
                                 <div class="row gy-4">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-label" for="user_id">User ID</label>
-                                            <input type="text" class="form-control form-control-lg" id="user_id" value="5f3c273d0ce633c7beccb936" placeholder="" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label" for="name">Name</label>
+                                            <label class="form-label" for="name">Username</label>
                                             <input type="text" class="form-control form-control-lg" id="name" value="TOKO 13" placeholder="" readonly>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-label" for="ticket">Ticket</label>
-                                            <input type="text" class="form-control form-control-lg" id="ticket" value="08 June 2022 09:20" placeholder="" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label" for="expired">Expired</label>
-                                            <input type="text" class="form-control form-control-lg" id="expired" value="08 June 2022 12:20" placeholder="" readonly>
+                                            <label class="form-label" for="date">Tanggal</label>
+                                            <input type="text" class="form-control form-control-lg" id="date" value="08 June 2022 12:20" placeholder="" readonly>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-label" for="nominal">Nominal</label>
                                             <input type="text" class="form-control form-control-lg" id="nominal" value="Rp 1.000.493" placeholder="" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label" for="admin_fee">Admin Fee</label>
-                                            <input type="text" class="form-control form-control-lg" id="admin_fee" value="Rp 0" placeholder="" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label" for="net nominal">Net Nominal</label>
-                                            <input type="text" class="form-control form-control-lg" id="net nominal" value="Rp 1.000.493" placeholder="" readonly>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -101,11 +77,8 @@
                                     </div>
                                     <div class="col-12">
                                         <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
-                                            {{-- <li>
-                                                <a href="#" class="btn btn-lg btn-primary">Save</a>
-                                            </li> --}}
                                             <li>
-                                                <a href="/transaction/deposit" class="btn btn-lg btn-light">Back</a>
+                                                <a href="/admin/transaction/deposit" class="btn btn-lg btn-light">Kembali</a>
                                             </li>
                                         </ul>
                                     </div>

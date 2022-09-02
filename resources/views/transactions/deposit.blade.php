@@ -12,7 +12,7 @@
                                 <nav>
                                     <ul class="breadcrumb">
                                         <li class="breadcrumb-item">Home</li>
-                                        <li class="breadcrumb-item">Deposit</li>
+                                        <li class="breadcrumb-item">Transaksi</li>
                                         <li class="breadcrumb-item active"><a href="#">Deposit</a></li>
                                     </ul>
                                 </nav>
@@ -20,240 +20,108 @@
                         </div><!-- .nk-block-between -->
                     </div><!-- .nk-block-head -->
                     <div class="nk-block nk-block-lg">
-                        <div class="row g-gs">
-                            <div class="col-xxl-3 col-sm-6">
-                                <div class="card">
-                                    <div class="nk-ecwg nk-ecwg6">
-                                        <div class="card-inner">
-                                            <div class="card-title-group">
-                                                <div class="card-title">
-                                                    <h6 class="title">Total Deposit</h6>
-                                                </div>
-                                            </div>
-                                            <div class="data">
-                                                <div class="data-group">
-                                                    <div class="amount">Rp. 23.485</div>
-                                                </div>
-                                                <div class="info"><span class="change down text-danger"><em class="icon ni ni-arrow-long-down"></em>2.34%</span></div>
-                                            </div>
-                                        </div><!-- .card-inner -->
-                                    </div><!-- .nk-ecwg -->
-                                </div><!-- .card -->
-                            </div><!-- .col -->
-                            <div class="col-xxl-3 col-sm-6">
-                                <div class="card">
-                                    <div class="nk-ecwg nk-ecwg6">
-                                        <div class="card-inner">
-                                            <div class="card-title-group">
-                                                <div class="card-title">
-                                                    <h6 class="title">Deposit Success</h6>
-                                                </div>
-                                            </div>
-                                            <div class="data">
-                                                <div class="data-group">
-                                                    <div class="amount">1.945</div>
-                                                    <div class="nk-ecwg6-ck">
-                                                        <canvas class="ecommerce-line-chart-s3" id="todayOrders"></canvas>
-                                                    </div>
-                                                </div>
-                                                <div class="info"><span class="change up text-danger"><em class="icon ni ni-arrow-long-up"></em>4.63%</span></div>
-                                            </div>
-                                        </div><!-- .card-inner -->
-                                    </div><!-- .nk-ecwg -->
-                                </div><!-- .card -->
-                            </div><!-- .col -->
-                            <div class="col-xxl-3 col-sm-6">
-                                <div class="card">
-                                    <div class="nk-ecwg nk-ecwg6">
-                                        <div class="card-inner">
-                                            <div class="card-title-group">
-                                                <div class="card-title">
-                                                    <h6 class="title">Deposit Pending</h6>
-                                                </div>
-                                            </div>
-                                            <div class="data">
-                                                <div class="data-group">
-                                                    <div class="amount">847</div>
-                                                    <div class="nk-ecwg6-ck">
-                                                        <canvas class="ecommerce-line-chart-s3" id="todayCustomers"></canvas>
-                                                    </div>
-                                                </div>
-                                                <div class="info"><span class="change up text-danger"><em class="icon ni ni-arrow-long-up"></em>4.63%</span></div>
-                                            </div>
-                                        </div><!-- .card-inner -->
-                                    </div><!-- .nk-ecwg -->
-                                </div><!-- .card -->
-                            </div><!-- .col -->
-                            <div class="col-xxl-3 col-sm-6">
-                                <div class="card">
-                                    <div class="nk-ecwg nk-ecwg6">
-                                        <div class="card-inner">
-                                            <div class="card-title-group">
-                                                <div class="card-title">
-                                                    <h6 class="title">Deposit Failed</h6>
-                                                </div>
-                                            </div>
-                                            <div class="data">
-                                                <div class="data-group">
-                                                    <div class="amount">38</div>
-                                                    <div class="nk-ecwg6-ck">
-                                                        <canvas class="ecommerce-line-chart-s3" id="todayRevenue"></canvas>
-                                                    </div>
-                                                </div>
-                                                <div class="info"><span class="change down text-danger"><em class="icon ni ni-arrow-long-down"></em>2.34%</span></div>
-                                            </div>
-                                        </div><!-- .card-inner -->
-                                    </div><!-- .nk-ecwg -->
-                                </div><!-- .card -->
-                            </div><!-- .col -->
-                            <div class="col-xxl-12">
-                                <div class="card card-bordered card-preview">
-                                    <div class="card-inner">
-                                        <div class="card-title-group">
-                                            <div class="card-title">
-                                                <h6 class="title">Deposit Transaction</h6>
-                                            </div>
-                                            <div class="card-tools">
-                                                <a href="#" class="btn btn-sm btn-success"><em class="icon ni ni-file-xls"></em><span>Export</span></a>
-                                            </div>
-                                        </div>
+                        <div class="card card-bordered card-preview">
+                            <div class="card-inner">
+                                <div class="card-title-group">
+                                    <div class="card-title">
+                                        <h6 class="title">Transaksi Deposit</h6>
                                     </div>
-                                    <div class="card-inner position-relative card-tools-toggle py-0">
-                                        <div class="card-title">
-                                            <div class="card-tools float-end">
-                                                <ul class="btn-toolbar gx-1">
-                                                    <li>
-                                                        <a href="javascript:void(0)" class="btn btn-icon search-toggle toggle-search" data-target="search"><em class="icon ni ni-search"></em></a>
-                                                    </li><!-- li -->
-                                                    <li class="btn-toolbar-sep"></li><!-- li -->
-                                                    <li>
-                                                        <div class="dropdown">
-                                                            <a href="javascript:void(0)" class="btn btn-trigger btn-icon dropdown-toggle" data-bs-toggle="dropdown">
-                                                                <div class="dot dot-primary"></div>
-                                                                <em class="icon ni ni-filter-alt"></em>
-                                                            </a>
-                                                            <div class="filter-wg dropdown-menu dropdown-menu-xl dropdown-menu-end">
-                                                                <div class="dropdown-head">
-                                                                    <span class="sub-title dropdown-title">Filter Deposit</span>
-                                                                    <div class="dropdown">
-                                                                        <a href="javascript:void(0)" class="btn btn-sm btn-icon">
-                                                                            <em class="icon ni ni-cross"></em>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dropdown-body dropdown-body-rg">
-                                                                    <div class="row gx-6 gy-3">
-                                                                        <div class="col-6">
-                                                                            <div class="form-group" id="reportrange">
-                                                                                <label class="overline-title overline-title-alt">Date</label>
-                                                                                <div class="form-control-wrap">
-                                                                                    <div class="form-icon form-icon-left">
-                                                                                        <em class="icon ni ni-calendar"></em>
-                                                                                    </div>
-                                                                                    <span class="form-control text-nowrap text-ellipsis" id="date"></span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-6">
-                                                                            <div class="form-group">
-                                                                                <label class="overline-title overline-title-alt">Status</label>
-                                                                                <select class="form-select js-select2">
-                                                                                    <option value="any">Any Role</option>
-                                                                                    <option value="investor">Investor</option>
-                                                                                    <option value="seller">Seller</option>
-                                                                                    <option value="buyer">Buyer</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-12">
-                                                                            <div class="form-group">
-                                                                                <button type="button" class="btn btn-secondary">Filter</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dropdown-foot">
-                                                                    <a class="clickable" href="javascript:void(0)">Reset Filter</a>
-                                                                </div>
-                                                            </div><!-- .filter-wg -->
-                                                        </div><!-- .dropdown -->
-                                                    </li><!-- li -->
-                                                </ul><!-- .btn-toolbar -->
-                                            </div><!-- .card-tools -->
-                                        </div><!-- .card-title-group -->
-                                        <div class="card-search search-wrap" data-search="search">
-                                            <div class="card-body">
-                                                <div class="search-content">
-                                                    <a href="javascript:void(0)" class="search-back btn btn-icon toggle-search" data-target="search"><em class="icon ni ni-arrow-left"></em></a>
-                                                    <input type="text" class="form-control border-transparent form-focus-none" placeholder="Search...">
-                                                    <button class="search-submit btn btn-icon"><em class="icon ni ni-search"></em></button>
-                                                </div>
-                                            </div>
-                                        </div><!-- .card-search -->
-                                    </div><!-- .card-inner -->
-                                    <div class="card-inner">
-                                        <table class="datatable-init table">
-                                            <thead class="align-middle">
-                                                <tr>
-                                                    <th>User</th>
-                                                    <th>Date</th>
-                                                    <th>Nominal</th>
-                                                    <th>Net Nominal</th>
-                                                    <th>Status</th>
-                                                    <th>Bank</th>
-                                                    <th>Description</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        ID: <br>
-                                                        <span class="fw-bold text-break">
-                                                            5f3c273d0ce633c7beccb936
-                                                        </span> <br>
-                                                        Name: <br>
-                                                        <span class="fw-bold">
-                                                            TOKO 13
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        Ticket: <br>
-                                                        <span class="fw-bold">
-                                                            08 June 2022 09:20
-                                                        </span> <br>
-                                                        Expired: <br>
-                                                        <span class="fw-bold">
-                                                            08 June 2022 12:20
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        Nominal: <br>
-                                                        <span class="fw-bold">
-                                                            Rp 1.000.493
-                                                        </span> <br>
-                                                        Admin: <br>
-                                                        <span class="fw-bold">
-                                                            Rp 0
-                                                        </span>
-                                                    </td>
-                                                    <td>Rp 1.000.000</td>
-                                                    <td><span class="badge badge-dim rounded-pill bg-outline-success">Success</span></td>
-                                                    <td>BRI</td>
-                                                    <td>Deposite Success</td>
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <a href="/transaction/deposit/detail" class="btn btn-icon btn-info mb-1 me-1"><em class="icon ni ni-eye-alt"></em></a>
-                                                            <a href="#" class="btn btn-icon btn-danger mb-1"><em class="icon ni ni-trash-alt"></em></a>
+                                    <div class="card-tools me-n1">
+                                        <ul class="btn-toolbar gx-1">
+                                            <li>
+                                                <div class="dropdown">
+                                                    <a href="javascript:void(0)" class="btn btn-trigger btn-icon dropdown-toggle" data-bs-toggle="dropdown">
+                                                        <div class="dot dot-primary"></div>
+                                                        <em class="icon ni ni-filter-alt"></em>
+                                                    </a>
+                                                    <div class="filter-wg dropdown-menu dropdown-menu-xl dropdown-menu-end">
+                                                        <div class="dropdown-head bg-primary">
+                                                            <span class="sub-title dropdown-title text-white">Filter Deposit</span>
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div><!-- .card-preview -->
+                                                        <div class="dropdown-body dropdown-body-rg">
+                                                            <div class="row gx-6 gy-3">
+                                                                <div class="col-12">
+                                                                    <div class="form-group" id="reportrange">
+                                                                        <label class="overline-title overline-title-alt">Date</label>
+                                                                        <div class="form-control-wrap">
+                                                                            <div class="form-icon form-icon-left">
+                                                                                <em class="icon ni ni-calendar"></em>
+                                                                            </div>
+                                                                            <span class="form-control text-nowrap text-ellipsis" id="date"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label class="overline-title overline-title-alt">Bank</label>
+                                                                        <select class="form-select js-select2">
+                                                                            <option value="any">All</option>
+                                                                            <option value="bri">BRI</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label class="overline-title overline-title-alt">Status</label>
+                                                                        <select class="form-select js-select2">
+                                                                            <option value="any">All</option>
+                                                                            <option value="1">Sukses</option>
+                                                                            <option value="0">Gagal</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <button type="button" class="btn btn-secondary">Filter</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dropdown-foot between">
+                                                            <a class="clickable" href="javascript:void(0)">Reset Filter</a>
+                                                        </div>
+                                                    </div><!-- .filter-wg -->
+                                                </div><!-- .dropdown -->
+                                            </li><!-- li -->
+                                        </ul><!-- .btn-toolbar -->
+                                    </div><!-- .card-tools -->
+                                </div>
                             </div>
-                        </div> <!-- row-end -->
+                            <div class="card-inner">
+                                <table class="datatable-deposit table">
+                                    <thead class="align-middle">
+                                        <tr>
+                                            <th>Username</th>
+                                            <th>Tanggal</th>
+                                            <th>Nominal</th>
+                                            <th>Bank</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="align-middle">
+                                        <tr>
+                                            <td>alexander</td>
+                                            <td>30 Agustus 2022  13:00:00</td>
+                                            <td>Rp 100.123</td>
+                                            <td>BRI</td>
+                                            <td><span class="badge badge-dim rounded-pill bg-outline-success">Success</span></td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle btn-sm btn btn-primary btn-action" data-bs-toggle="dropdown"><span>Action</span><em class="icon ni ni-chevron-down"></em></a>
+                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                        <ul class="link-list-opt no-bdr">
+                                                            <li><a href="/admin/transaction/deposit/detail" class="text-info"><em class="icon ni ni-eye"></em><span>Detail</span></a></li>
+                                                            <li><a href="#" class="text-danger"><em class="icon ni ni-trash-alt"></em><span>Delete</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><!-- .card-preview -->
                     </div> <!-- nk-block -->
                 </div>
             </div>
@@ -266,8 +134,37 @@
 @endpush
 
 @push('js')
+    <script src="{{asset('/assets/js/libs/datatable-btns.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/daterangepicker.min.js"></script>
+    <script>
+        !function (NioApp, $){
+            NioApp.DataTable.init = function () {
+                NioApp.DataTable('.datatable-deposit', {
+                    responsive: {
+                        details: true
+                    },
+                    buttons: ['excel'],
+                    language: {
+                        search: "",
+                        searchPlaceholder: "Search ...",
+                        lengthMenu: "<span class='d-none d-sm-inline-block'>Show</span><div class='form-control-select'> _MENU_ </div>",
+                        info: "_START_ -_END_ of _TOTAL_",
+                        infoEmpty: "0",
+                        infoFiltered: "( Total _MAX_  )",
+                        paginate: {
+                            "first": "First",
+                            "last": "Last",
+                            "next": "Next",
+                            "previous": "Prev"
+                        },
+                        zeroRecords: '<div class="text-center p-4">' + '<img class="mb-3" src="/images/gfx/no_data.svg" alt="Image Description" style="width: 80px;">' + '<p class="mb-0">No data to show</p>' + '</div>',
+                    },
+                });
+            };
+            return NioApp;
+        }(NioApp, jQuery);
+    </script>
     <script type="text/javascript">
         $(function() {
 
