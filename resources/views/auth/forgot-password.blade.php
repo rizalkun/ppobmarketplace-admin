@@ -20,7 +20,7 @@
                     </div>
                 </div>
             </div><!-- .nk-block-head -->
-            <form action="html/pages/auths/auth-success.html">
+            <form action="/reset">
                 <div class="form-group">
                     <div class="form-label-group">
                         <label class="form-label" for="default-01">Email</label>

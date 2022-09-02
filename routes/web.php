@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('login');
+    return redirect('auth.forgot-password');
 });
 
-Route::get('/login', function () {
-    return view('auth.login');
-});
+Route::get('/login', function () { return view('auth.login'); });
+Route::get('/reset', function () { return view('auth.reset'); });
+Route::get('/forgot-password', function () { return view('auth.forgot-password'); });
 
 Route::prefix('admin')->group(function(){
 
@@ -49,7 +49,10 @@ Route::prefix('admin')->group(function(){
 
     Route::prefix('transaction')->group(function(){
         Route::get('deposit', function() { return view('transactions.deposit'); });
+        Route::get('deposit/detail', function() { return view('transactions.detailDeposit'); });
+
         Route::get('ppob', function() { return view('transactions.ppob'); });
+
         Route::get('history', function() { return view('transactions.transaction'); });
     });
 

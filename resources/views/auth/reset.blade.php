@@ -20,7 +20,7 @@
                     </div>
                 </div>
             </div><!-- .nk-block-head -->
-            <form action="html/pages/auths/auth-success.html">
+            <form action="/login">
                 <div class="form-group">
                     <div class="form-label-group">
                         <label class="form-label" for="newPassword">New Password</label>
