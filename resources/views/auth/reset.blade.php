@@ -52,7 +52,7 @@
         </div><!-- .nk-block -->
         <div class="nk-block nk-auth-footer">
             <div class="mt-3">
-                <p>&copy; 2022 DashLite. All Rights Reserved.</p>
+                <p>&copy; 2022 PPOB Admin. All Rights Reserved.</p>
             </div>
         </div><!-- .nk-block -->
     </div><!-- .nk-split-content -->
