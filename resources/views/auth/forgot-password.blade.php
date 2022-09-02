@@ -20,7 +20,7 @@
                     </div>
                 </div>
             </div><!-- .nk-block-head -->
-            <form action="html/pages/auths/auth-success.html">
+            <form action="/reset">
                 <div class="form-group">
                     <div class="form-label-group">
                         <label class="form-label" for="default-01">Email</label>
@@ -39,7 +39,7 @@
         </div><!-- .nk-block -->
         <div class="nk-block nk-auth-footer">
             <div class="mt-3">
-                <p>&copy; 2022 DashLite. All Rights Reserved.</p>
+                <p>&copy; 2022 PPOB Admin. All Rights Reserved.</p>
             </div>
         </div><!-- .nk-block -->
     </div><!-- .nk-split-content -->
