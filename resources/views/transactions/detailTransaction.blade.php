@@ -8,12 +8,12 @@
                     <div class="nk-block-head nk-block-head-sm">
                         <div class="nk-block-between">
                             <div class="nk-block-head-content">
-                                <h3 class="nk-block-title page-title">Deposit</h3>
+                                <h3 class="nk-block-title page-title">Riwayat Transaksi</h3>
                                 <nav>
                                     <ul class="breadcrumb">
                                         <li class="breadcrumb-item">Home</li>
                                         <li class="breadcrumb-item">Transaksi</li>
-                                        <li class="breadcrumb-item">Deposit</li>
+                                        <li class="breadcrumb-item">Riwayat Transaksi</li>
                                         <li class="breadcrumb-item active"><a href="#">Detail</a></li>
                                     </ul>
                                 </nav>
@@ -25,7 +25,7 @@
                             <div class="card-inner">
                                 <div class="card-title-group">
                                     <div class="card-title">
-                                        <h6 class="title">Detail Deposit</h6>
+                                        <h6 class="title">Detail Riwayat Transaksi</h6>
                                     </div>
                                     <div class="card-tools">
                                         <a href="#" class="btn btn-icon btn-outline-primary"><em class="icon ni ni-printer"></em></a>
@@ -37,49 +37,56 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-label" for="name">Username</label>
-                                            <input type="text" class="form-control" id="name" value="TOKO 13" placeholder="" readonly>
+                                            <input type="text" class="form-control" id="name" value="alexander" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="date">Tanggal</label>
-                                            <input type="text" class="form-control" id="date" value="08 June 2022 12:20" placeholder="" readonly>
+                                            <label class="form-label" for="p_name">Nama Produk</label>
+                                            <input type="text" class="form-control" id="p_name" value="PLN Pascabayar" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="exp_date">Tanggal Expired</label>
-                                            <input type="text" class="form-control" id="exp_date" value="08 June 2022 12:20" placeholder="" readonly>
+                                            <label class="form-label" for="phone">Nomor Tujuan</label>
+                                            <input type="text" class="form-control" id="phone" value="123456700012" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="nominal">Nominal</label>
-                                            <input type="text" class="form-control" id="nominal" value="Rp 1.000.493" placeholder="" readonly>
+                                            <label class="form-label" for="price">Harga</label>
+                                            <input type="text" class="form-control" id="price" value="Rp 100.000" placeholder="" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="admin">Biaya Admin</label>
+                                            <input type="text" class="form-control" id="admin" value="Rp 0" placeholder="" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="total_tagihan">Total Tagihan</label>
+                                            <input type="text" class="form-control" id="total_tagihan" value="Rp 100.000" placeholder="" readonly>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-label" for="metode">Metode Pembayaran</label>
-                                            <input type="text" class="form-control" id="metode" value="Rp 1.000.493" placeholder="" readonly>
+                                            <input type="text" class="form-control" id="metode" value="Saldo" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="bank">Bank</label>
-                                            <input type="text" class="form-control" id="bank" value="Rp 1.000.493" placeholder="" readonly>
+                                            <label class="form-label" for="date">Tanggal Transaksi</label>
+                                            <input type="text" class="form-control" id="date" value="08 June 2022 12:20" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
                                             <label class="form-label">Status</label>
                                             <span class="form-control"><span class="badge badge-dot bg-success">&nbsp;</span>Sukses</span>
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="description">Description</label>
+                                            <label class="form-label" for="description">Deskripsi</label>
                                             <div class="form-control-wrap">
-                                                <textarea class="form-control" id="description" placeholder="Description..." readonly>Deposite Success</textarea>
+                                                <textarea class="form-control" id="description" placeholder="Description..." readonly>Transaksi Success</textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <ul class="align-center justify-between flex-wrap flex-sm-nowrap gx-4 gy-2">
                                             <li>
-                                                <a href="#" class="btn btn-lg btn-success">Terima Deposit</a>
-                                                <a href="#" class="btn btn-lg btn-outline-danger">Tolak Deposit</a>
+                                                <a href="#" class="btn btn-lg btn-primary">Refund Saldo</a>
                                             </li>
                                             <li>
-                                                <a href="/admin/transaction/deposit" class="btn btn-lg btn-light">Kembali</a>
+                                                <a href="/admin/transaction/history" class="btn btn-lg btn-light">Kembali</a>
                                             </li>
                                         </ul>
                                     </div>

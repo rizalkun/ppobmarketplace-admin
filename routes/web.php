@@ -50,17 +50,28 @@ Route::prefix('admin')->group(function(){
         Route::get('deposit/detail', function() { return view('transactions.detailDeposit'); });
 
         Route::get('ppob', function() { return view('transactions.ppob'); });
+        Route::get('ppob/detail', function() { return view('transactions.detailPPOB'); });
 
         Route::get('history', function() { return view('transactions.transaction'); });
+        Route::get('history/detail', function() { return view('transactions.detailTransaction'); });
     });
 
-    Route::get('/mitra/list', function () { return view('mitra.index'); });
+    Route::get('/mitra/list', function () { return view('mitras.index'); });
+    Route::get('/mitra/list/add', function () { return view('mitras.add'); });
+    Route::get('/mitra/list/edit', function () { return view('mitras.edit'); });
 
     Route::prefix('report')->group(function(){
-        Route::get('balance-in', function() { return view('report.balanceIn'); });
-        Route::get('balance-out', function() { return view('report.balanceOut'); });
-        Route::get('laba', function() { return view('report.laba'); });
-        Route::get('commission', function() { return view('report.commission'); });
+        Route::get('balance-in', function() { return view('reports.balanceIn'); });
+        Route::get('balance-in/detail', function() { return view('reports.detailBalanaceIn'); });
+
+        Route::get('balance-out', function() { return view('reports.balanceOut'); });
+        Route::get('balance-out/detail', function() { return view('reports.detailBalanaceOut'); });
+
+        Route::get('laba', function() { return view('reports.laba'); });
+        Route::get('laba/detail', function() { return view('reports.detailLaba'); });
+
+        Route::get('commission', function() { return view('reports.commission'); });
+        Route::get('commission/detail', function() { return view('reports.detailCommission'); });
     });
 
     Route::prefix('user')->group(function(){
@@ -69,9 +80,16 @@ Route::prefix('admin')->group(function(){
     });
 
     Route::prefix('user-management')->group(function(){
-        Route::get('user', function() { return view('report.index'); });
-        Route::get('role', function() { return view('report.role'); });
-        Route::get('permission', function() { return view('report.permission'); });
+        Route::get('user', function() { return view('managements.index'); });
+        Route::get('user/detail', function() { return view('managements.detail'); });
+
+        Route::get('role', function() { return view('managements.role'); });
+        Route::get('role/add', function() { return view('managements.roleAdd'); });
+        Route::get('role/edit', function() { return view('managements.roleEdit'); });
+
+        Route::get('permission', function() { return view('managements.permission'); });
+        Route::get('permission/add', function() { return view('managements.permissionAdd'); });
+        Route::get('permission/edit', function() { return view('managements.permissionEdit'); });
     });
 
     Route::prefix('setting')->group(function(){

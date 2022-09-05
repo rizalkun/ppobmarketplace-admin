@@ -34,15 +34,15 @@
                                     <div class="card-inner">
                                         <form action="/admin/product/operator">
                                             <div class="form-group">
-                                                <label class="form-label" for="p_id">Product Id</label>
-                                                <input type="text" class="form-control" name="product_id" id="p_id" value="" placeholder="Enter Product Id">
+                                                <label class="form-label" for="p_id">ID Produk</label>
+                                                <input type="text" class="form-control" name="product_id" id="p_id" value="" placeholder="Enter Produk Id">
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label" for="p_name">Product Name</label>
-                                                <input type="text" class="form-control" name="product_name" id="p_name" value="" placeholder="Enter Product Name">
+                                                <label class="form-label" for="p_name">Nama Produk</label>
+                                                <input type="text" class="form-control" name="product_name" id="p_name" value="" placeholder="Enter Produk Name">
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label" for="k_id">Kategori Id</label>
+                                                <label class="form-label" for="k_id">Kategori</label>
                                                 <input type="text" class="form-control" name="kategori_id" id="k_id" value="" placeholder="Enter Category Id">
                                             </div>
                                             <div class="form-group">
@@ -72,7 +72,7 @@
                                                     <button type="submit" class="btn btn-lg btn-primary">Update</button>
                                                 </li>
                                                 <li>
-                                                    <a href="/admin/product/operator" class="btn btn-lg btn-light">Cancel</a>
+                                                    <a href="/admin/product/operator" class="btn btn-lg btn-light">Batal</a>
                                                 </li>
                                             </ul>
                                         </form>

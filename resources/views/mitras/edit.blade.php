@@ -8,13 +8,13 @@
                     <div class="nk-block-head nk-block-head-sm">
                         <div class="nk-block-between">
                             <div class="nk-block-head-content">
-                                <h3 class="nk-block-title page-title">Kategori</h3>
+                                <h3 class="nk-block-title page-title">List Mitra</h3>
                                 <nav>
                                     <ul class="breadcrumb">
                                         <li class="breadcrumb-item">Home</li>
-                                        <li class="breadcrumb-item">Produk</li>
-                                        <li class="breadcrumb-item">Kategori</li>
-                                        <li class="breadcrumb-item active"><a href="#">Tambah</a></li>
+                                        <li class="breadcrumb-item">Mitra</li>
+                                        <li class="breadcrumb-item">List Mitra</li>
+                                        <li class="breadcrumb-item active"><a href="#">Edit</a></li>
                                     </ul>
                                 </nav>
                             </div><!-- .nk-block-head-content -->
@@ -27,42 +27,39 @@
                                     <div class="card-inner">
                                         <div class="card-title-group">
                                             <div class="card-title">
-                                                <h6 class="title">Tambah Kategori</h6>
+                                                <h6 class="title">Edit Mitra</h6>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-inner">
-                                        <form action="/admin/product/category">
+                                        <form action="/admin/mitra/list">
+                                            {{-- @csrf --}}
+                                            <input type="hidden" name="id" value="">
                                             <div class="form-group">
-                                                <label class="form-label" for="p_id">ID Produk</label>
-                                                <input type="text" class="form-control" name="product_id" id="p_id" placeholder="Enter Produk Id">
+                                                <label class="form-label" for="m_name">Nama Mitra</label>
+                                                <input type="text" class="form-control" name="mitra_name" id="m_name" value="" placeholder="Enter Mitra Name">
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label" for="p_name">Nama Produk</label>
-                                                <input type="text" class="form-control" name="product_name" id="p_name" placeholder="Enter Produk Name">
+                                                <label class="form-label" for="address">Alamat</label>
+                                                <input type="text" class="form-control" name="address" id="address" value="" placeholder="Enter Alamat">
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label">Type</label>
-                                                <select class="form-select js-select2" name="is_prabayar">
-                                                    <option>Select</option>
-                                                    <option value="true">Prabayar</option>
-                                                    <option value="false">Pascabayar</option>
-                                                </select>
+                                                <label class="form-label" for="phone">No HP</label>
+                                                <input type="text" class="form-control" name="phone" id="phone" value="" placeholder="Enter No HP">
                                             </div>
                                             <div class="form-group">
                                                 <label class="form-label">Status</label>
                                                 <select class="form-select js-select2" name="status">
-                                                    <option>Select</option>
-                                                    <option value="1">Tersedia</option>
-                                                    <option value="0">Tidak Tersedia</option>
+                                                    <option value="1" >Tersedia</option>
+                                                    <option value="0" >Tidak Tersedia</option>
                                                 </select>
                                             </div>
                                             <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
                                                 <li>
-                                                    <button type="submit" class="btn btn-lg btn-primary">Tambah</button>
+                                                    <button type="submit" class="btn btn-lg btn-primary">Update</button>
                                                 </li>
                                                 <li>
-                                                    <a href="/admin/product/category" class="btn btn-lg btn-light">Batal</a>
+                                                    <a href="/admin/mitra/list" class="btn btn-lg btn-light">Batal</a>
                                                 </li>
                                             </ul>
                                         </form>
