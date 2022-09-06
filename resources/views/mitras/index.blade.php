@@ -8,12 +8,12 @@
                     <div class="nk-block-head nk-block-head-sm">
                         <div class="nk-block-between">
                             <div class="nk-block-head-content">
-                                <h3 class="nk-block-title page-title">Transaksi</h3>
+                                <h3 class="nk-block-title page-title">List Mitra</h3>
                                 <nav>
                                     <ul class="breadcrumb">
                                         <li class="breadcrumb-item">Home</li>
-                                        <li class="breadcrumb-item">Transaksi</li>
-                                        <li class="breadcrumb-item active"><a href="#">Riwayat Transaksi</a></li>
+                                        <li class="breadcrumb-item">Mitra</li>
+                                        <li class="breadcrumb-item active"><a href="#">List Mitra</a></li>
                                     </ul>
                                 </nav>
                             </div><!-- .nk-block-head-content -->
@@ -24,10 +24,13 @@
                             <div class="card-inner">
                                 <div class="card-title-group">
                                     <div class="card-title">
-                                        <h6 class="title">Riwayat Transaksi</h6>
+                                        <h6 class="title">List Mitra</h6>
                                     </div>
                                     <div class="card-tools me-n1">
                                         <ul class="btn-toolbar gx-1">
+                                            <li class="align-center">
+                                                <a href="/admin/mitra/list/add" class="btn btn-sm btn-primary"><em class="icon ni ni-plus-sm"></em><span class="d-none d-md-block">Tambah Mitra</span></a>
+                                            </li><!-- li -->
                                             <li>
                                                 <div class="dropdown">
                                                     <a href="javascript:void(0)" class="btn btn-trigger btn-icon dropdown-toggle" data-bs-toggle="dropdown">
@@ -36,7 +39,7 @@
                                                     </a>
                                                     <div class="filter-wg dropdown-menu dropdown-menu-xl dropdown-menu-end">
                                                         <div class="dropdown-head bg-primary">
-                                                            <span class="sub-title dropdown-title text-white">Filter Transaksi</span>
+                                                            <span class="sub-title dropdown-title text-white">Filter Mitra</span>
                                                         </div>
                                                         <div class="dropdown-body dropdown-body-rg">
                                                             <div class="row gx-6 gy-3">
@@ -79,34 +82,30 @@
                                 </div>
                             </div>
                             <div class="card-inner">
-                                <table class="datatable-transaction table">
+                                <table class="datatable-mitra table">
                                     <thead class="align-middle">
                                         <tr>
-                                            <th>ID</th>
-                                            <th>Username</th>
-                                            <th>Produk</th>
-                                            <th>Nomor Tujuan</th>
-                                            <th>Tanggal</th>
-                                            <th>Harga</th>
+                                            <th>Nama Mitra</th>
+                                            <th>Tanggal Bergabung</th>
+                                            <th>Alamat</th>
+                                            <th>Nomor Hp</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody class="align-middle">
                                         <tr>
-                                            <td>I5</td>
-                                            <td>alexander</td>
-                                            <td>TELKOMSEL</td>
-                                            <td>085755292480</td>
-                                            <td>30 Agustus 2022  13:30:00</td>
-                                            <td>Rp 100.000</td>
-                                            <td><span class="badge badge-dim rounded-pill bg-outline-success">Success</span></td>
+                                            <td>Leslie Alexander</td>
+                                            <td>30 Agustus 2022</td>
+                                            <td>1901 Thornridge Cir. Shiloh, Hawaii 81063</td>
+                                            <td>085155512345</td>
+                                            <td><span class="badge badge-dim rounded-pill bg-outline-success">Aktif</span></td>
                                             <td>
                                                 <div class="dropdown">
                                                     <a class="dropdown-toggle btn-sm btn btn-primary btn-action" data-bs-toggle="dropdown"><span>Action</span><em class="icon ni ni-chevron-down"></em></a>
                                                     <div class="dropdown-menu dropdown-menu-end">
                                                         <ul class="link-list-opt no-bdr">
-                                                            <li><a href="/admin/transaction/history/detail" class="text-info"><em class="icon ni ni-eye"></em><span>Detail</span></a></li>
+                                                            <li><a href="/admin/mitra/list/edit" class="text-primary"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
                                                             <li><a href="#" class="text-danger"><em class="icon ni ni-trash-alt"></em><span>Delete</span></a></li>
                                                         </ul>
                                                     </div>
@@ -135,11 +134,10 @@
     <script>
         !function (NioApp, $){
             NioApp.DataTable.init = function () {
-                NioApp.DataTable('.datatable-transaction', {
+                NioApp.DataTable('.datatable-mitra', {
                     responsive: {
                         details: true
                     },
-                    buttons: ['excel'],
                     language: {
                         search: "",
                         searchPlaceholder: "Search ...",

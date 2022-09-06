@@ -8,12 +8,12 @@
                     <div class="nk-block-head nk-block-head-sm">
                         <div class="nk-block-between">
                             <div class="nk-block-head-content">
-                                <h3 class="nk-block-title page-title">Deposit</h3>
+                                <h3 class="nk-block-title page-title">Saldo Masuk</h3>
                                 <nav>
                                     <ul class="breadcrumb">
                                         <li class="breadcrumb-item">Home</li>
-                                        <li class="breadcrumb-item">Transaksi</li>
-                                        <li class="breadcrumb-item">Deposit</li>
+                                        <li class="breadcrumb-item">Laporan</li>
+                                        <li class="breadcrumb-item">Saldo Masuk</li>
                                         <li class="breadcrumb-item active"><a href="#">Detail</a></li>
                                     </ul>
                                 </nav>
@@ -25,7 +25,7 @@
                             <div class="card-inner">
                                 <div class="card-title-group">
                                     <div class="card-title">
-                                        <h6 class="title">Detail Deposit</h6>
+                                        <h6 class="title">Detail Saldo Masuk</h6>
                                     </div>
                                     <div class="card-tools">
                                         <a href="#" class="btn btn-icon btn-outline-primary"><em class="icon ni ni-printer"></em></a>
@@ -37,11 +37,11 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-label" for="name">Username</label>
-                                            <input type="text" class="form-control" id="name" value="TOKO 13" placeholder="" readonly>
+                                            <input type="text" class="form-control" id="name" value="alexander" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="date">Tanggal</label>
-                                            <input type="text" class="form-control" id="date" value="08 June 2022 12:20" placeholder="" readonly>
+                                            <label class="form-label" for="transaction">Transaksi</label>
+                                            <input type="text" class="form-control" id="transaction" value="Deposit Saldo" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
                                             <label class="form-label" for="exp_date">Tanggal Expired</label>
@@ -58,7 +58,7 @@
                                             <input type="text" class="form-control" id="metode" value="Rp 1.000.493" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="bank">Bank</label>
+                                            <label class="form-label" for="bank">Bank Tujuan</label>
                                             <input type="text" class="form-control" id="bank" value="Rp 1.000.493" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
@@ -73,13 +73,9 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <ul class="align-center justify-between flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                        <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
                                             <li>
-                                                <a href="#" class="btn btn-lg btn-success">Terima Deposit</a>
-                                                <a href="#" class="btn btn-lg btn-outline-danger">Tolak Deposit</a>
-                                            </li>
-                                            <li>
-                                                <a href="/admin/transaction/deposit" class="btn btn-lg btn-light">Kembali</a>
+                                                <a href="/admin/report/balance-in" class="btn btn-lg btn-light">Kembali</a>
                                             </li>
                                         </ul>
                                     </div>

@@ -8,12 +8,12 @@
                     <div class="nk-block-head nk-block-head-sm">
                         <div class="nk-block-between">
                             <div class="nk-block-head-content">
-                                <h3 class="nk-block-title page-title">Deposit</h3>
+                                <h3 class="nk-block-title page-title">User</h3>
                                 <nav>
                                     <ul class="breadcrumb">
                                         <li class="breadcrumb-item">Home</li>
-                                        <li class="breadcrumb-item">Transaksi</li>
-                                        <li class="breadcrumb-item">Deposit</li>
+                                        <li class="breadcrumb-item">Manage User</li>
+                                        <li class="breadcrumb-item">User</li>
                                         <li class="breadcrumb-item active"><a href="#">Detail</a></li>
                                     </ul>
                                 </nav>
@@ -25,10 +25,7 @@
                             <div class="card-inner">
                                 <div class="card-title-group">
                                     <div class="card-title">
-                                        <h6 class="title">Detail Deposit</h6>
-                                    </div>
-                                    <div class="card-tools">
-                                        <a href="#" class="btn btn-icon btn-outline-primary"><em class="icon ni ni-printer"></em></a>
+                                        <h6 class="title">Detail User</h6>
                                     </div>
                                 </div>
                             </div>
@@ -36,50 +33,43 @@
                                 <div class="row gy-4">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-label" for="name">Username</label>
-                                            <input type="text" class="form-control" id="name" value="TOKO 13" placeholder="" readonly>
+                                            <label class="form-label" for="user_id">ID User</label>
+                                            <input type="text" class="form-control" id="user_id" value="5076f653d403" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="date">Tanggal</label>
-                                            <input type="text" class="form-control" id="date" value="08 June 2022 12:20" placeholder="" readonly>
+                                            <label class="form-label" for="name">Nama</label>
+                                            <input type="text" class="form-control" id="name" value="Leslie Alexander" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="exp_date">Tanggal Expired</label>
-                                            <input type="text" class="form-control" id="exp_date" value="08 June 2022 12:20" placeholder="" readonly>
+                                            <label class="form-label" for="phone">Nomer Hp</label>
+                                            <input type="text" class="form-control" id="phone" value="085155512345" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="nominal">Nominal</label>
-                                            <input type="text" class="form-control" id="nominal" value="Rp 1.000.493" placeholder="" readonly>
+                                            <label class="form-label" for="username">Username</label>
+                                            <input type="text" class="form-control" id="username" value="alexander" placeholder="" readonly>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-label" for="metode">Metode Pembayaran</label>
-                                            <input type="text" class="form-control" id="metode" value="Rp 1.000.493" placeholder="" readonly>
+                                            <label class="form-label" for="date">Tanggal Bergabung</label>
+                                            <input type="text" class="form-control" id="date" value="30 Agustus 2022" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label" for="bank">Bank</label>
-                                            <input type="text" class="form-control" id="bank" value="Rp 1.000.493" placeholder="" readonly>
+                                            <label class="form-label" for="transaction">Jumlah Transaksi</label>
+                                            <input type="text" class="form-control" id="transaction" value="100" placeholder="" readonly>
                                         </div>
                                         <div class="form-group">
                                             <label class="form-label">Status</label>
-                                            <span class="form-control"><span class="badge badge-dot bg-success">&nbsp;</span>Sukses</span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="form-label" for="description">Description</label>
-                                            <div class="form-control-wrap">
-                                                <textarea class="form-control" id="description" placeholder="Description..." readonly>Deposite Success</textarea>
-                                            </div>
+                                            <span class="form-control"><span class="badge badge-dot bg-success">&nbsp;</span>Aktif</span>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <ul class="align-center justify-between flex-wrap flex-sm-nowrap gx-4 gy-2">
                                             <li>
-                                                <a href="#" class="btn btn-lg btn-success">Terima Deposit</a>
-                                                <a href="#" class="btn btn-lg btn-outline-danger">Tolak Deposit</a>
+                                                <a href="#" class="btn btn-lg btn-warning">Banned User</a>
                                             </li>
                                             <li>
-                                                <a href="/admin/transaction/deposit" class="btn btn-lg btn-light">Kembali</a>
+                                                <a href="/admin/user/list" class="btn btn-lg btn-light">Kembali</a>
                                             </li>
                                         </ul>
                                     </div>

@@ -8,12 +8,12 @@
                     <div class="nk-block-head nk-block-head-sm">
                         <div class="nk-block-between">
                             <div class="nk-block-head-content">
-                                <h3 class="nk-block-title page-title">Transaksi</h3>
+                                <h3 class="nk-block-title page-title">Saldo Keluar</h3>
                                 <nav>
                                     <ul class="breadcrumb">
                                         <li class="breadcrumb-item">Home</li>
-                                        <li class="breadcrumb-item">Transaksi</li>
-                                        <li class="breadcrumb-item active"><a href="#">Riwayat Transaksi</a></li>
+                                        <li class="breadcrumb-item">Laporan</li>
+                                        <li class="breadcrumb-item active"><a href="#">Saldo Keluar</a></li>
                                     </ul>
                                 </nav>
                             </div><!-- .nk-block-head-content -->
@@ -24,7 +24,7 @@
                             <div class="card-inner">
                                 <div class="card-title-group">
                                     <div class="card-title">
-                                        <h6 class="title">Riwayat Transaksi</h6>
+                                        <h6 class="title">Saldo Keluar</h6>
                                     </div>
                                     <div class="card-tools me-n1">
                                         <ul class="btn-toolbar gx-1">
@@ -36,7 +36,7 @@
                                                     </a>
                                                     <div class="filter-wg dropdown-menu dropdown-menu-xl dropdown-menu-end">
                                                         <div class="dropdown-head bg-primary">
-                                                            <span class="sub-title dropdown-title text-white">Filter Transaksi</span>
+                                                            <span class="sub-title dropdown-title text-white">Filter Saldo</span>
                                                         </div>
                                                         <div class="dropdown-body dropdown-body-rg">
                                                             <div class="row gx-6 gy-3">
@@ -51,7 +51,16 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-12">
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label class="overline-title overline-title-alt">Bank</label>
+                                                                        <select class="form-select js-select2">
+                                                                            <option value="any">All</option>
+                                                                            <option value="bri">BRI</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6">
                                                                     <div class="form-group">
                                                                         <label class="overline-title overline-title-alt">Status</label>
                                                                         <select class="form-select js-select2">
@@ -79,34 +88,30 @@
                                 </div>
                             </div>
                             <div class="card-inner">
-                                <table class="datatable-transaction table">
+                                <table class="datatable-balance table">
                                     <thead class="align-middle">
                                         <tr>
-                                            <th>ID</th>
                                             <th>Username</th>
-                                            <th>Produk</th>
-                                            <th>Nomor Tujuan</th>
+                                            <th>Transaksi</th>
+                                            <th>Nominal</th>
                                             <th>Tanggal</th>
-                                            <th>Harga</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody class="align-middle">
                                         <tr>
-                                            <td>I5</td>
                                             <td>alexander</td>
-                                            <td>TELKOMSEL</td>
-                                            <td>085755292480</td>
-                                            <td>30 Agustus 2022  13:30:00</td>
-                                            <td>Rp 100.000</td>
-                                            <td><span class="badge badge-dim rounded-pill bg-outline-success">Success</span></td>
+                                            <td>Pulsa TSEL 100.000</td>
+                                            <td>- Rp 100.123</td>
+                                            <td>30 Agustus 2022  13:00:00</td>
+                                            <td><span class="badge badge-dim rounded-pill bg-outline-success">Sukses</span></td>
                                             <td>
                                                 <div class="dropdown">
                                                     <a class="dropdown-toggle btn-sm btn btn-primary btn-action" data-bs-toggle="dropdown"><span>Action</span><em class="icon ni ni-chevron-down"></em></a>
                                                     <div class="dropdown-menu dropdown-menu-end">
                                                         <ul class="link-list-opt no-bdr">
-                                                            <li><a href="/admin/transaction/history/detail" class="text-info"><em class="icon ni ni-eye"></em><span>Detail</span></a></li>
+                                                            <li><a href="/admin/report/balance-out/detail" class="text-info"><em class="icon ni ni-eye"></em><span>Detail</span></a></li>
                                                             <li><a href="#" class="text-danger"><em class="icon ni ni-trash-alt"></em><span>Delete</span></a></li>
                                                         </ul>
                                                     </div>
@@ -135,7 +140,7 @@
     <script>
         !function (NioApp, $){
             NioApp.DataTable.init = function () {
-                NioApp.DataTable('.datatable-transaction', {
+                NioApp.DataTable('.datatable-balance', {
                     responsive: {
                         details: true
                     },

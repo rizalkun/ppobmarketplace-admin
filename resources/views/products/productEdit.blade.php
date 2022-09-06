@@ -34,15 +34,15 @@
                                         </div>
                                         <div class="card-inner">
                                             <div class="form-group">
-                                                <label class="form-label" for="p_code">Product Code</label>
-                                                <input type="text" class="form-control" id="p_code" name="product_code" value="" placeholder="Enter Product Code">
+                                                <label class="form-label" for="p_code">Kode Produk</label>
+                                                <input type="text" class="form-control" id="p_code" name="product_code" value="" placeholder="Enter Kode Produk">
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label" for="p_name">Product Name</label>
-                                                <input type="text" class="form-control" id="p_name" name="product_name" value="" placeholder="Enter Product Name">
+                                                <label class="form-label" for="p_name">Nama Produk</label>
+                                                <input type="text" class="form-control" id="p_name" name="product_name" value="" placeholder="Enter Nama Produk">
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label">Category</label>
+                                                <label class="form-label">Kategori</label>
                                                 <select class="form-select js-select2" name="kategori_id" data-search="on">
                                                     <option value="1">1</option>
                                                 </select>
@@ -68,7 +68,7 @@
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label" for="description">Description</label>
+                                                <label class="form-label" for="description">Deskripsi</label>
                                                 <div class="form-control-wrap">
                                                     <textarea class="form-control" id="description" name="description" placeholder="Description..."></textarea>
                                                 </div>
@@ -99,7 +99,7 @@
                                                     <button type="submit" class="btn btn-lg btn-primary">Update</button>
                                                 </li>
                                                 <li>
-                                                    <a href="/admin/product/list" class="btn btn-lg btn-light">Cancel</a>
+                                                    <a href="/admin/product/list" class="btn btn-lg btn-light">Batal</a>
                                                 </li>
                                             </ul>
                                         </div>

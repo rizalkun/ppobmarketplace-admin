@@ -92,7 +92,7 @@
                                             <a href="/admin/report/laba" class="nk-menu-link"><span class="nk-menu-text">Laba</span></a>
                                         </li>
                                         <li class="nk-menu-item">
-                                            <a href="/admin/report/commision" class="nk-menu-link"><span class="nk-menu-text">Komisi</span></a>
+                                            <a href="/admin/report/commission" class="nk-menu-link"><span class="nk-menu-text">Komisi</span></a>
                                         </li>
                                     </ul><!-- .nk-menu-sub -->
                                 </li><!-- .nk-menu-item -->

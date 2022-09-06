@@ -8,61 +8,47 @@
                     <div class="nk-block-head nk-block-head-sm">
                         <div class="nk-block-between">
                             <div class="nk-block-head-content">
-                                <h3 class="nk-block-title page-title">Kategori</h3>
+                                <h3 class="nk-block-title page-title">Permission</h3>
                                 <nav>
                                     <ul class="breadcrumb">
                                         <li class="breadcrumb-item">Home</li>
-                                        <li class="breadcrumb-item">Produk</li>
-                                        <li class="breadcrumb-item">Kategori</li>
+                                        <li class="breadcrumb-item">User Management</li>
+                                        <li class="breadcrumb-item">Permission</li>
                                         <li class="breadcrumb-item active"><a href="#">Tambah</a></li>
                                     </ul>
                                 </nav>
                             </div><!-- .nk-block-head-content -->
                         </div><!-- .nk-block-between -->
                     </div><!-- .nk-block-head -->
-                    <div class="nk-block nk-block-lg">
+                    <div class="nk-block g-gs">
                         <div class="row">
-                            <div class="col-lg-8 col-xl-6">
+                            <div class="col-xl-6 col-lg-6">
                                 <div class="card card-bordered card-preview">
                                     <div class="card-inner">
                                         <div class="card-title-group">
                                             <div class="card-title">
-                                                <h6 class="title">Tambah Kategori</h6>
+                                                <h6 class="title">Tambah Permission</h6>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-inner">
-                                        <form action="/admin/product/category">
+                                        <form action="/admin/user-management/permission">
                                             <div class="form-group">
-                                                <label class="form-label" for="p_id">ID Produk</label>
-                                                <input type="text" class="form-control" name="product_id" id="p_id" placeholder="Enter Produk Id">
+                                                <label class="form-label" for="permission_name">Nama</label>
+                                                <input type="text" class="form-control" id="permission_name" placeholder="Permission Name">
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label" for="p_name">Nama Produk</label>
-                                                <input type="text" class="form-control" name="product_name" id="p_name" placeholder="Enter Produk Name">
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="form-label">Type</label>
-                                                <select class="form-select js-select2" name="is_prabayar">
-                                                    <option>Select</option>
-                                                    <option value="true">Prabayar</option>
-                                                    <option value="false">Pascabayar</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="form-label">Status</label>
-                                                <select class="form-select js-select2" name="status">
-                                                    <option>Select</option>
-                                                    <option value="1">Tersedia</option>
-                                                    <option value="0">Tidak Tersedia</option>
-                                                </select>
+                                                <label class="form-label" for="description">Deskripsi</label>
+                                                <div class="form-control-wrap">
+                                                    <textarea class="form-control" id="description" placeholder="Description"></textarea>
+                                                </div>
                                             </div>
                                             <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
                                                 <li>
                                                     <button type="submit" class="btn btn-lg btn-primary">Tambah</button>
                                                 </li>
                                                 <li>
-                                                    <a href="/admin/product/category" class="btn btn-lg btn-light">Batal</a>
+                                                    <a href="/admin/user-management/permission" class="btn btn-lg btn-light">Batal</a>
                                                 </li>
                                             </ul>
                                         </form>
@@ -70,9 +56,10 @@
                                 </div><!-- .card-preview -->
                             </div>
                         </div>
-                    </div> <!-- nk-block -->
+                    </div><!-- .nk-block -->
                 </div>
             </div>
         </div>
     </div>
 @endsection
+

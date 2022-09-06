@@ -56,16 +56,16 @@
                                                 <label class="form-label">Status</label>
                                                 <select class="form-select js-select2">
                                                     <option>Select</option>
-                                                    <option value="1">Active</option>
-                                                    <option value="0">Not Active</option>
+                                                    <option value="1">Aktif</option>
+                                                    <option value="0">Tidak Aktif</option>
                                                 </select>
                                             </div>
                                             <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
                                                 <li>
-                                                    <button type="submit" class="btn btn-lg btn-primary">Save</button>
+                                                    <button type="submit" class="btn btn-lg btn-primary">Simpan</button>
                                                 </li>
                                                 <li>
-                                                    <a href="/admin/product/level-markup" class="btn btn-lg btn-light">Cancel</a>
+                                                    <a href="/admin/product/level-markup" class="btn btn-lg btn-light">Batal</a>
                                                 </li>
                                             </ul>
                                         </form>
