@@ -27,16 +27,11 @@
                                         <h6 class="title">List Permission</h6>
                                     </div>
                                     <div class="card-tools">
-                                        <div class="toggle-wrap nk-block-tools-toggle">
-                                            <a href="#" class="btn btn-icon btn-trigger toggle-expand me-n1" data-target="pageMenu"><em class="icon ni ni-more-v"></em></a>
-                                            <div class="toggle-expand-content" data-content="pageMenu">
-                                                <ul class="nk-block-tools g-3">
-                                                    <li>
-                                                        <a href="/admin/user-management/permission/add" class="btn btn-sm btn-primary"><em class="icon ni ni-plus-sm"></em><span class="d-none d-md-block">Add Permission</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <ul class="nk-block-tools g-3">
+                                            <li>
+                                                <a href="/admin/user-management/permission/add" class="btn btn-sm btn-primary"><em class="icon ni ni-plus-sm"></em><span class="d-none d-md-block">Add Permission</span></a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

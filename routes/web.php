@@ -75,13 +75,17 @@ Route::prefix('admin')->group(function(){
     });
 
     Route::prefix('user')->group(function(){
-        Route::get('list', function() { return view('user.index'); });
-        Route::get('kyc', function() { return view('user.kyc'); });
+        Route::get('list', function() { return view('users.index'); });
+        Route::get('list/detail', function() { return view('users.detail'); });
+
+        Route::get('kyc', function() { return view('users.kyc'); });
+        Route::get('kyc/detail', function() { return view('users.kycDetail'); });
     });
 
     Route::prefix('user-management')->group(function(){
         Route::get('user', function() { return view('managements.index'); });
-        Route::get('user/detail', function() { return view('managements.detail'); });
+        Route::get('user/add', function() { return view('managements.add'); });
+        Route::get('user/edit', function() { return view('managements.edit'); });
 
         Route::get('role', function() { return view('managements.role'); });
         Route::get('role/add', function() { return view('managements.roleAdd'); });
@@ -93,7 +97,7 @@ Route::prefix('admin')->group(function(){
     });
 
     Route::prefix('setting')->group(function(){
-        Route::get('profile', function() { return view('setting.profile'); });
+        Route::get('profile', function() { return view('settings.profile'); });
         Route::get('password', function() { return view('setting.password'); });
     });
 });
